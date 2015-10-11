@@ -1,5 +1,7 @@
 require 'sprockets'
-require 'bootstrap-sass'
+
+require 'bootstrap-sass' # Okay to remove this if you don't want TWBS.
+
 Sprockets.append_path File.join(Dir.pwd, 'js')
 Sprockets.append_path File.join(Dir.pwd, 'css')
 
