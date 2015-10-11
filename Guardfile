@@ -8,8 +8,6 @@ guard 'rack' do
   watch('config.ru')
 end
 
-# Example 1: Run a single command whenever a file is added
-
 build_assets = proc do |_, _, _|
   require './assets/sprockets.rb'
   build
