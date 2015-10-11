@@ -1,6 +1,5 @@
-require 'sprockets'
-
-require 'bootstrap-sass' # Okay to remove this if you don't want TWBS.
+require 'bundler'
+Bundler.require(:default)
 
 Sprockets.append_path File.join(Dir.pwd, 'js')
 Sprockets.append_path File.join(Dir.pwd, 'css')
