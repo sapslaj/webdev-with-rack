@@ -15,3 +15,6 @@ gem 'sass'
 gem 'coffee-script'
 
 gem 'bootstrap-sass' # Okay to remove this if you don't want TWBS.
+
+source 'https://rails-assets.org' do
+end
