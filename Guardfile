@@ -17,3 +17,5 @@ guard :yield, run_on_modifications: build_assets do
   watch(/^css\//)
   watch(/^js\//)
 end
+
+build_assets.call()
