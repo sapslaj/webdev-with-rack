@@ -3,6 +3,7 @@ Bundler.require(:default)
 
 Sprockets.append_path File.join(Dir.pwd, 'js')
 Sprockets.append_path File.join(Dir.pwd, 'css')
+Sprockets.append_path File.join(Dir.pwd, 'fonts') if Dir.exist? 'fonts'
 
 if defined?(RailsAssets)
   RailsAssets.load_paths.each do |path|
