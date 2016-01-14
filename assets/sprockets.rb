@@ -13,8 +13,10 @@ end
 
 def build
   %w(main.js main.css).each do |filename|
+    new_asset = Sprockets::Environment.new[filename].to_s
+
     File.open("assets/#{filename}", 'w') do |f|
-      f.write Sprockets::Environment.new[filename].to_s
+      f.write new_asset
     end
   end
 end
